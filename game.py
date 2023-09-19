@@ -26,8 +26,14 @@ steps = 0
 # Initialize a list to store the player's inputs
 player_inputs = []
 
+# Define the game title
+game_title = "Maze Escape"
+
 # Function to print the current state of the maze
 def print_maze():
+    # Print the game title
+    print(game_title.center(30, '-'))
+    
     for row_index, row in enumerate(maze):
         for col_index, cell in enumerate(row):
             if [row_index, col_index] == player_position:
@@ -80,7 +86,7 @@ while True:
                 print(f"Congratulations! You reached the exit in {steps} steps.")
                 break
         else:
-            print("You can't move there. It's a wall.")
+            print("You hit a wall. You can't move there.")
     else:
         print("You can't move outside the maze.")
 
