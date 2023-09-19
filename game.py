@@ -27,7 +27,7 @@ steps = 0
 player_inputs = []
 
 # Define the game title
-game_title = "Maze Escape"
+game_title = "Mamba Maze"
 
 # Function to print the current state of the maze
 def print_maze():
